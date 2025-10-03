@@ -18,4 +18,6 @@ catdoc.c:8:10: fatal error: 'config.h' file not found
       |          ^~~~~~~~~~
 ```
 
-maybe `-DHAVE_CONFIG_H` is unnecessary?
+> [!WARNING]
+> maybe `-DHAVE_CONFIG_H` is unnecessary?
+
