@@ -7,10 +7,15 @@
 * run `configure`
 * find `src/config.h`
 
-* in
-
-* in `catdoc/src/Makefile`
+> [!TIP]
+> in `catdoc/src/Makefile`
+> ```
+> -sFILESYSTEM=0 -sNO_FILESYSTEM=1
+> ```
 
 ```
--sFILESYSTEM=0 -sNO_FILESYSTEM=1
+cd catdoc/src
+make catdoc-wasm
 ```
+
+fails because `emsdk` in `third_party` is not good 
