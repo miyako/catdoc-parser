@@ -19,3 +19,18 @@ make catdoc-wasm
 ```
 
 fails because `emsdk` in `third_party` is not good 
+
+```
+~/emsdk/upstream/emscripten/emcc \
+ -o ../../catdoc.wasm \
+		catdoc.c reader.c writer.c \
+		analyze.c rtfread.c charsets.c \
+		substmap.c fileutil.c confutil.c \
+		numutils.c ole.c \
+		-I. -O3 -DHAVE_CONFIG_H \
+		-DCATDOC_VERSION=\"0.95\" \
+		-DCHARSETPATH=\"charsets\" \
+		-sEXPORTED_FUNCTIONS=_get_text,_get_author,_get_last_author,_get_version,_get_title,_get_subject,_get_keywords,_get_comments,_get_annotation_authors\
+		-sSTANDALONE_WASM -sWARN_ON_UNDEFINED_SYMBOLS=0 \
+		--no-entry -sFILESYSTEM=0 -sNO_FILESYSTEM=1 -sALLOW_MEMORY_GROWTH -sMAXIMUM_MEMORY=1GB
+```
