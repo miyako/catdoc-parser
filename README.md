@@ -1,1 +1,8 @@
 # catdoc-parser
+
+## note to self
+
+download `catdoc-0.95.tar.gz` from [www.wagner.pp.ru](https://www.wagner.pp.ru/~vitus/software/catdoc/)  
+
+[github](https://github.com/petewarden/catdoc) clone fails configure
+
