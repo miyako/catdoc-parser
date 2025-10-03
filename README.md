@@ -13,12 +13,13 @@
 > -sFILESYSTEM=0 -sNO_FILESYSTEM=1
 > ```
 
-```
-cd catdoc/src
-make catdoc-wasm
-```
-
-fails because `emsdk` in `third_party` is not good 
+> [!WARNING]
+> 
+> ```
+> cd catdoc/src
+> make catdoc-wasm
+> ```
+> fails because `emsdk` in `third_party` is not good 
 
 ```
 ~/emsdk/upstream/emscripten/emcc \
