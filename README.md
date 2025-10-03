@@ -21,3 +21,8 @@ catdoc.c:8:10: fatal error: 'config.h' file not found
 > [!WARNING]
 > maybe `-DHAVE_CONFIG_H` is unnecessary?
 
+```
+error: cannot combine with previous 'int' declaration specifier
+   31 | typedef unsigned int uint32_t;
+      |                      ^
+```
