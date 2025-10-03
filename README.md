@@ -12,3 +12,10 @@ catdoc.c:8:10: fatal error: 'config.h' file not found
       |          ^~~~~~~~~~
 ```
 
+```
+./catdoc.h:11:10: fatal error: 'config.h' file not found
+   11 | #include <config.h>
+      |          ^~~~~~~~~~
+```
+
+maybe `-DHAVE_CONFIG_H` is unnecessary?
